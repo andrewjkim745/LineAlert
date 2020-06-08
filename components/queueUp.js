@@ -10,6 +10,8 @@ export const QueueUp = ({ queue }) => {
             <Text>Queue up for the King Da Ka and we will alert you when you are next in line!</Text>
             <Button
             style={styles.buttons}
+            title="Queue Up"
+            color='#841584'
             />
         </View>
     )
