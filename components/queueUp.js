@@ -9,6 +9,7 @@ export const QueueUp = ({ queue }) => {
         <View style={styles.container}>
             <Text>Queue up for the King Da Ka and we will alert you when you are next in line!</Text>
             <Button
+            onPress={queue}
             style={styles.buttons}
             title="Queue Up"
             color='#841584'
@@ -23,5 +24,8 @@ export const QueueUp = ({ queue }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1
+    },
+    buttons: {
+        color: 'lightblue'
     }
 })
