@@ -29,36 +29,21 @@ export default class Login extends React.Component {
     render() {
 
 
-        const [text, setText] = useState('');
+        const [email, setEmail, password, setPassword ] = useState('');
 
 
         return (
             <View>
                 <Text>Login to start queueing up for lines</Text>
-                {/* <Input
-                    placeholder='Email'
-                    leftIcon={
-                        <Icon
-                            name='email'
-                            size={24}
-                            color='black'
-                        />
-                    }
-                /> */}
                 <TextInput
                 placeholder='Email'
-                onChangeText={text => setText(text)}
-                defaultValue={text}
+                onChangeText={email => setEmail(email)}
+                defaultValue={email}
                 />
-                <Input
-                    placeholder='Password'
-                    leftIcon={
-                        <Icon
-                            name='onepassword'
-                            size={24}
-                            color='black'
-                        />
-                    }
+                <TextInput
+                placeholder="Password"
+                onChangeText={password =>setPassword(password)}
+                defaultValue={password}
                 />
             </View>
         )
