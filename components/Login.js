@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TextInput } from 'react-native'
 import { Input } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/Fontisto'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -29,10 +29,13 @@ export default class Login extends React.Component {
     render() {
 
 
+        const [text, setText] = useState('');
+
+
         return (
             <View>
                 <Text>Login to start queueing up for lines</Text>
-                <Input
+                {/* <Input
                     placeholder='Email'
                     leftIcon={
                         <Icon
@@ -41,6 +44,11 @@ export default class Login extends React.Component {
                             color='black'
                         />
                     }
+                /> */}
+                <TextInput
+                placeholder='Email'
+                onChangeText={text => setText(text)}
+                defaultValue={text}
                 />
                 <Input
                     placeholder='Password'
