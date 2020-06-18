@@ -4,8 +4,17 @@ import { View, StyleSheet, Text, Button } from 'react-native'
 
 
 
-export const QueueUp = ({ queue }) => {
-    return (
+export class QueueUp extends React.Component {
+    constructor(props) {
+        super(props)
+    this.state = {
+
+    }
+}
+
+
+    render() {
+        return (
         <View style={styles.container}>
             <Text>Queue up for the King Da Ka and we will alert you when you are next in line!</Text>
             <Button
@@ -16,6 +25,7 @@ export const QueueUp = ({ queue }) => {
             />
         </View>
     )
+    }
 }
 
 
