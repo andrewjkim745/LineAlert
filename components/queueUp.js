@@ -23,6 +23,7 @@ export class QueueUp extends React.Component {
             title="Queue Up"
             color='#841584'
             />
+            
         </View>
     )
     }

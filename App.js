@@ -1,12 +1,45 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import QueueUp from './components/queueUp'
+import Login from './components/Login'
 
-export default function App() {
+export class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+
+    this.state = {
+      isLoading: true,
+      NewUser: false,
+      LoggedIn: false
+    }
+  }
+
+
+  componentDidMount = () => {
+
+    this.setState({
+      isLoading: false
+    })
+  }
+
+
+  render() {
+
+
+    const { isLoading, NewUser, LoggedIn } = this.state;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <>
+    {isLoading ? 
+    <Text>Please Wait while we load some information</Text> 
+    :
+    <Login/>    
+    }
+    
+    </>
   );
+}
 }
 
 const styles = StyleSheet.create({
