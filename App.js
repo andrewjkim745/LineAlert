@@ -32,11 +32,10 @@ export class App extends React.Component {
   return (
     <>
     {isLoading ? 
-    <Text>Please Wait while we load some information</Text> 
+    {NewUser ? <Text>Please Wait while we load some information</Text> 
     :
     <Login/>    
     }
-    
     </>
   );
 }
