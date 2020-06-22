@@ -31,8 +31,7 @@ export class App extends React.Component {
 
   return (
     <>
-    {isLoading ? 
-    {NewUser ? <Text>Please Wait while we load some information</Text> 
+    {isLoading ? <Text>Please wait</Text>
     :
     <Login/>    
     }

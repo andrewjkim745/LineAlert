@@ -1,8 +1,9 @@
 import React from 'react'
-import { View, Text, StyleSheet, TextInput } from 'react-native'
-import { Input } from 'react-native-elements'
+import { View, Text, StyleSheet, TextInput} from 'react-native'
+import { Input, Button } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/Fontisto'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+
 
 
 
@@ -25,6 +26,7 @@ export default class Login extends React.Component {
 
 
         return (
+            <>
             <View>
                 <Text>Login to start queueing up for lines</Text>
                 <TextInput
@@ -38,6 +40,15 @@ export default class Login extends React.Component {
                 defaultValue={password}
                 />
             </View>
+            <Button
+            title='Continue as Guest'
+            
+            />
+            <Button
+            title='Login'
+            />
+            </>
+
         )
     }
 }
