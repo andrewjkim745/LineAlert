@@ -42,7 +42,8 @@ export default class Login extends React.Component {
             </View>
             <Button
             title='Continue as Guest'
-            
+            onPress={this.props.onPress}
+
             />
             <Button
             title='Login'
