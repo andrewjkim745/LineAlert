@@ -27,33 +27,35 @@ export default class Login extends React.Component {
 
 
         return (
-            <>
             <ThemeContext.Consumer>
-                {({theme}) => (
-                <View style={{ backgroundColor: theme.background}}>
-                    <Text>Login to start queueing up for lines</Text>
-                    <TextInput
-                        placeholder='Email'
-                        onChangeText={email => setEmail(email)}
-                        defaultValue={email}
+                {({ theme }) => (
+                    <>
+                    <View style={{ backgroundColor: theme.background }}>
+                        <Text>Login to start queueing up for lines</Text>
+                        <TextInput
+                            placeholder='Email'
+                            onChangeText={email => setEmail(email)}
+                            defaultValue={email}
+                        />
+                        <TextInput
+                            placeholder="Password"
+                            onChangeText={password => setPassword(password)}
+                            defaultValue={password}
+                        />
+                    </View>
+                    <Button
+                        title='Continue as Guest'
+                        onPress={this.props.onPress}
                     />
-                    <TextInput
-                        placeholder="Password"
-                        onChangeText={password => setPassword(password)}
-                        defaultValue={password}
+                    <Button
+                        title='Login'
                     />
-                </View>
-                <Button
-                    title='Continue as Guest'
-                    onPress={this.props.onPress}
-
-                />
-                <Button
-                    title='Login'
-                />
+                    <Button
+                        title='continue as'
+                    />
+                    </>
                 )}
             </ThemeContext.Consumer>
-            </>
         )
     }
 }
