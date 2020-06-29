@@ -9,3 +9,10 @@ export const themes = {
 export const ThemeContext = React.createContext({
     theme: themes.orange
 })
+
+
+export const ReactContext = React.createContext({
+    user: '',
+    email: '',
+    password: ''
+})
