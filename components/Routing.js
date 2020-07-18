@@ -18,6 +18,9 @@ function Routing() {
             {props => <Login {...props} onPress={onPress}/>}
         </Stack.Screen>
         <Stack.Screen name="Queue" component={QueueUp}/>
+        <Stack.Screen name="details">
+          {props => <Details {...props} onPress={getinLine}/>}
+        </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
