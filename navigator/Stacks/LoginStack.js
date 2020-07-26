@@ -1,24 +1,25 @@
 import { createStackNavigator } from 'react-navigation-stack'
 // import Movies from '../views/movies/Movies'
 // import MovieDetails from '../views/movies/MovieDetails'
-import Login from '../'
+import Login from '../../components/Login'
+import Title from '../../components/Title'
 import { Secondary, Primary } from '../colors'
 
 const MovieStack = createStackNavigator({
-    MoviesView: {
-        screen: Movies,
+    TitleView: {
+        screen: Title,
         navigationOptions: ({ navigation }) => ({
-            title: 'Movies'
+            title: 'Title'
         })
     },
-    MovieDetails: {
-        screen: MovieDetails,
+    LoginView: {
+        screen: Login,
         navigationOptions: ({ navigation })=> ({
-            title: `${navigation.state.params.movieTitle}` //
+            title: 'Login' 
         })
     }
 }, {
-    initialRouteName: 'MoviesView',
+    initialRouteName: 'Title',
     defaultNavigationOptions: {
         headerStyle: {
             backgroundColor: Secondary
