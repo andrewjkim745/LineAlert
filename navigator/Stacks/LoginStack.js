@@ -1,6 +1,4 @@
 import { createStackNavigator } from 'react-navigation-stack'
-// import Movies from '../views/movies/Movies'
-// import MovieDetails from '../views/movies/MovieDetails'
 import Login from '../../components/Login'
 import Title from '../../components/Title'
 import { Secondary, Primary } from '../colors'

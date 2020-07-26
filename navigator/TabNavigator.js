@@ -1,6 +1,8 @@
 import React from 'react'
 import { createBottomTabNavigator } from 'react-navigation-tabs'
 import { MaterialIcons } from '@expo/vector-icons'
+import LoginStack from '../navigator/Stacks/LoginStack'
+import RestaurantStack from '../navigator/Stacks/RestaurantStack'
 
 import { Primary, Secondary } from '../colors'
 

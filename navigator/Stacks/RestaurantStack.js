@@ -1,6 +1,4 @@
 import { createStackNavigator } from 'react-navigation-stack'
-// import ShowDetails from '../views/shows/ShowDetails'
-// import Shows from '../views/shows/Shows'
 import queueUp from '../../components/queueUp'
 import Details from '../../components/Details'
 import { Secondary, Primary } from '../colors'
