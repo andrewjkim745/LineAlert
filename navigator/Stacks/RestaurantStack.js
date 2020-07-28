@@ -25,7 +25,7 @@ const ShowStack = createStackNavigator(
                 backgroundColor: Secondary
             },
             headerTitleStyle: { fontWeight: '700' },
-            headerTintColor: Primary
+            headerTintColor: Primary // <---- imported from colors set initally before import
         },
         cardStyle: {
             backgroundColor: Primary
