@@ -19,7 +19,7 @@ const ShowStack = createStackNavigator(
         }
     },
     {
-        initialRouteName: 'RestaurantsView', 
+        initialRouteName: 'RestaurantsView',  // <---- sets inital route of stack? 
         defaultNavigationOptions: {
             headerStyle: {   // <----- background colors
                 backgroundColor: Secondary
