@@ -25,7 +25,7 @@ const TabNavigator = createBottomTabNavigator(
         // Grab  routeName from the navigation
         const { routeName } = navigation.state
         // Setting a variable equal to our imported icon library
-        let IconComponent = MaterialIcons
+        let IconComponent = MaterialIcons // <--- imported material icons 
         // Create variable that we can resassign later on to display different icon types
         let iconName
         // Check what the routename is and assign iconName variable to a string that corresponds to

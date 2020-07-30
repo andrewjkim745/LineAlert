@@ -12,7 +12,7 @@ const ShowStack = createStackNavigator(
             })
         },
         ShowDetails: {
-            screen: Details, 
+            screen: Details,
             navigationOptions: ({ navigation }) => ({
                 title: `${navigation.state.params.showTitle}` // <---- params of show passed from show component
             })
