@@ -29,9 +29,11 @@ const TabNavigator = createBottomTabNavigator(
         // Create variable that we can resassign later on to display different icon types
         let iconName
         // Check what the routename is and assign iconName variable to a string that corresponds to
-        // the icon name
+        // the icon name 
+        if (routeName === 'REstaurants') {
+        }
         if (routeName === 'Logins') {
-          iconName = 'Login'
+          iconName = 'Login' 
         } else if (routeName === 'Restaurants') {
           iconName = 'Restaurant'
         }

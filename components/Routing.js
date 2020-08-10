@@ -5,6 +5,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from './Login'
 import { QueueUp } from './queueUp';
+import { Details } from './Details';
+import { Login } from './Login';
 
 
 
@@ -17,7 +19,9 @@ function Routing() {
         <Stack.Screen name="Home">
             {props => <Login {...props} onPress={onPress}/>}
         </Stack.Screen>
-        <Stack.Screen name="Queue" component={QueueUp}/>
+        <Stack.Screen name="Queue">
+          {props => <QueueUp {...props} onPress={onPress}/>}
+        </Stack.Screen>
         <Stack.Screen name="details">
           {props => <Details {...props} onPress={getinLine}/>}
         </Stack.Screen>
