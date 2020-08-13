@@ -26,7 +26,7 @@ function Routing() {
           {props => <Details {...props} onPress={getinLine}/>}
         </Stack.Screen>
       </Stack.Navigator>
-    </NavigationContainer>
+    </NavigationContainer> 
   );
 }
 
