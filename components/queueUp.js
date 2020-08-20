@@ -33,9 +33,13 @@ export class QueueUp extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        borderColor: 'lightgray',
+        borderRadius: '1px'
+        
     },
     buttons: {
-        color: 'lightblue'
+        color: 'lightblue',
+        
     }
 })
