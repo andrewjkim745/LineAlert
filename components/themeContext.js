@@ -19,3 +19,11 @@ export const ReactContext = React.createContext({
     email: '',
     password: ''
 })
+
+export const RegisterContext = React.createContext({
+    name: '',
+    email: '',
+    captcha: '',
+    password: '',
+    passwordCheck: ''
+})
