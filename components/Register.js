@@ -27,7 +27,7 @@ export default class Register extends React.Component {
     render() {
 
 
-        const [name, email, setEmail, password, passwordCheck] = useState('');
+        const [name, email, captcha, password, passwordCheck] = useState('');
 
 
         return (
@@ -46,6 +46,12 @@ export default class Register extends React.Component {
             placeholder="email"
             onChangeText={passwordCheck => setpasswordCheck(passwordCheck)}
             defaultValue={passwordCheck}
+        />
+        {/* <Image></Image> */}
+        <TextInput
+            placeholder='Name'
+            onChangeText={captcha => setcaptcha(name)}
+            defaultValue={captcha}
         />
         </>
         )
