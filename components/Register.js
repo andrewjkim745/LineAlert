@@ -34,7 +34,7 @@ export default class Register extends React.Component {
         <>
         <TextInput
             placeholder='Name'
-            onChangeText={name => setEmail(name)}
+            onChangeText={name => setname(name)}
             defaultValue={name}
         />
         <TextInput
