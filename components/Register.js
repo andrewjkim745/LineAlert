@@ -32,9 +32,6 @@ export default class Register extends React.Component {
 
         return (
         <>
-            // <RegisterContext.Consumer>
-            //     {({ name})}
-            // </RegisterContext.Consumer>
         <TextInput
             placeholder='Name'
             onChangeText={name => setEmail(name)}
