@@ -47,10 +47,9 @@ export default class Register extends React.Component {
             onChangeText={passwordCheck => setpasswordCheck(passwordCheck)}
             defaultValue={passwordCheck}
         />
-        {/* <Image></Image> */}
         <TextInput
             placeholder='Name'
-            onChangeText={captcha => setcaptcha(name)}
+            onChangeText={captcha => setcaptcha(captcha)}
             defaultValue={captcha}
         />
         </>
