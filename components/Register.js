@@ -43,12 +43,12 @@ export default class Register extends React.Component {
             defaultValue={password}
         />
         <TextInput
-            placeholder="email"
+            placeholder="Password Check"
             onChangeText={passwordCheck => setpasswordCheck(passwordCheck)}
             defaultValue={passwordCheck}
         />
         <TextInput
-            placeholder='Name'
+            placeholder='captcha'
             onChangeText={captcha => setcaptcha(captcha)}
             defaultValue={captcha}
         />
